@@ -4,8 +4,24 @@ public class Alumno {
 	private int numAlumno;
 	private String nombre;
 	private double nota;
+	private Direccion direccion;
 	
 	
+	@Override
+	public String toString() {
+		return "Alumno [numAlumno=" + numAlumno + ", nombre=" + nombre + ", nota=" + nota + ", direccion=" + direccion
+				+ "]";
+	}
+	public Direccion getDireccion() {
+		return direccion;
+	}
+	public void setDireccion(Direccion direccion) {
+		this.direccion = direccion;
+	}
+	public Alumno(Direccion direccion) {
+		super();
+		this.direccion = direccion;
+	}
 	public Alumno() {
 		super();
 	}
